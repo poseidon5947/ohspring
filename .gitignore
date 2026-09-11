@@ -64,3 +64,17 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+# AB Systems Tech platform
+frontend/.next/
+frontend/next-env.d.ts
+frontend/*.tsbuildinfo
+frontend/test-results/
+frontend/playwright-report/
+backend/target/
+backend/data/
+.env.*
+!.env.example
+/website_loading_animation.mp4
+*.h2.db
+*.mv.db

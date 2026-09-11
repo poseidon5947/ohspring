@@ -1,0 +1,28 @@
+{
+  "name": "ab-systems-tech",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "node scripts/start.mjs",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write app components lib i18n scripts tests *.ts"
+  },
+  "dependencies": {
+    "@fontsource/montserrat": "^5.2.0",
+    "@fontsource/open-sans": "^5.2.0",
+    "next": "^16.0.0",
+    "next-intl": "^4.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "prettier": "^3.9.6",
+    "typescript": "^5.9.0"
+  }
+}

@@ -1,0 +1,1 @@
+{"name":"ab-systems-tech-platform","private":true,"version":"1.0.0","scripts":{"dev":"npm --prefix frontend run dev","build":"npm --prefix frontend run build","start":"npm --prefix frontend run start","typecheck":"npm --prefix frontend run typecheck","test:e2e":"npm --prefix frontend exec playwright test"}}
