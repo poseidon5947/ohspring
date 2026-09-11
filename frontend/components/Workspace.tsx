@@ -9,14 +9,14 @@ import { fields, statuses, Field } from "@/lib/modules";
 import Header from "./Header";
 type Data = Record<string, Row[]>;
 const workspaceEmblems = [
-  "/brand/emblems/tracked-requests-v1.png",
-  "/brand/emblems/remote-response-v1.png",
-  "/brand/emblems/field-coordination-v1.png",
-  "/brand/emblems/visible-progress-v1.png",
-  "/brand/emblems/journey-understand-v1.png",
-  "/brand/emblems/journey-plan-v1.png",
-  "/brand/emblems/journey-resolve-v1.png",
-  "/brand/emblems/journey-care-v1.png",
+  "/brand/emblems/tracked-requests-v1.webp",
+  "/brand/emblems/remote-response-v1.webp",
+  "/brand/emblems/field-coordination-v1.webp",
+  "/brand/emblems/visible-progress-v1.webp",
+  "/brand/emblems/journey-understand-v1.webp",
+  "/brand/emblems/journey-plan-v1.webp",
+  "/brand/emblems/journey-resolve-v1.webp",
+  "/brand/emblems/journey-care-v1.webp",
 ];
 export default function Workspace() {
   const t = useTranslations(),

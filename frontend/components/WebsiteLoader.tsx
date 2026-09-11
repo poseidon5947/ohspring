@@ -110,11 +110,11 @@ export default function WebsiteLoader({
                   initialPhaseRef.current = "done";
                   setInitialPhase("done");
                 },
-                reduced ? 0 : 520,
+                reduced ? 0 : 280,
               ),
             );
           },
-          reduced ? 0 : Math.max(0, 1600 - (performance.now() - started)),
+          reduced ? 0 : Math.max(0, 900 - (performance.now() - started)),
         ),
       );
     };
@@ -127,7 +127,7 @@ export default function WebsiteLoader({
     if (reduced) {
       videoFinished = true;
     } else if (movie) {
-      movie.playbackRate = 1.35;
+      movie.playbackRate = 1;
       movie.addEventListener("ended", markVideoFinished, { once: true });
       movie.addEventListener("error", markVideoFinished, { once: true });
       movie.play().catch(markVideoFinished);
@@ -151,9 +151,15 @@ export default function WebsiteLoader({
     timers.push(
       setTimeout(() => {
         videoFinished = true;
+        finish();
+      }, 1600),
+    );
+    timers.push(
+      setTimeout(() => {
+        videoFinished = true;
         pageReady = true;
         finish();
-      }, 8200),
+      }, 2400),
     );
 
     return () => {
@@ -257,7 +263,7 @@ export default function WebsiteLoader({
             </div>
             <div className="website-loader-logo">
               <img
-                src="/brand/logo.png"
+                src="/brand/logo.webp"
                 alt="AB Systems Tech"
                 width={192}
                 height={192}

@@ -54,7 +54,7 @@ export default function Auth() {
           <div className="auth-nexus-stage">
             <Image
               className="auth-nexus"
-              src="/brand/emblems/hero-nexus-v1.png"
+              src="/brand/emblems/hero-nexus-v1.webp"
               width={440}
               height={440}
               alt={t("heroNexusAlt")}
@@ -62,7 +62,7 @@ export default function Auth() {
             />
             <Image
               className="auth-nexus-logo"
-              src="/brand/logo.png"
+              src="/brand/logo.webp"
               width={106}
               height={106}
               alt="AB Systems Tech"

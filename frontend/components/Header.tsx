@@ -12,7 +12,7 @@ export default function Header() {
     <header className="site-header">
       <div className="header-inner">
         <Link className="brand" href={`/${locale}`}>
-          <img src="/brand/icon.png" alt="" width="64" height="64" />
+          <img src="/brand/icon.webp" alt="" width="64" height="64" />
           <span>
             AB SYSTEMS TECH<small>{t("brandLine")}</small>
           </span>

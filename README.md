@@ -70,6 +70,6 @@ CHROME_PATH=/path/to/chrome npx playwright test
 - `frontend/`: Next.js App Router, React, TypeScript, next-intl, local Montserrat/Open Sans fonts.
 - `backend/`: Java 21 / Spring Boot; domain ports, application workflows, HTTP/JDBC/storage adapters; Flyway migrations.
 - `docs/`: source mapping, integration setup, deployment boundaries.
-- The supplied `.docx` files are source references. The logo and icon are unchanged PNGs extracted from the English brand manual. Old `assets/` files remain as unused historical resources; the new application does not load the portfolio scripts.
+- The supplied `.docx` files are source references. The logo and icon preserve the artwork extracted from the English brand manual and are delivered as optimized WebP assets. Old `assets/` files remain as unused historical resources; the new application does not load the portfolio scripts.
 
 No live provider credentials or company telephone/email were supplied. The contact form uses the CRM instead of invented contact details. The mission/vision copy is proposed copy derived from the company's stated objectives.

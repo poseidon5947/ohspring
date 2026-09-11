@@ -29,7 +29,7 @@ body {
   height: 100%;
 }
 .portfolio-clouds {
-  background: transparent url("/effects/clouds.png") repeat top center;
+  background: transparent url("/effects/clouds.webp") repeat top center;
   opacity: 0.28;
   animation: portfolio-cloud-drift 200s linear infinite;
 }
@@ -136,16 +136,16 @@ body {
     box-shadow 0.45s ease;
 }
 .service-card-software::before {
-  background-image: url("/brand/service-custom-software-v1.png");
+  background-image: url("/brand/service-custom-software-v1.webp");
 }
 .service-card-support::before {
-  background-image: url("/brand/service-remote-support-v1.png");
+  background-image: url("/brand/service-remote-support-v1.webp");
 }
 .service-card-hardware::before {
-  background-image: url("/brand/service-hardware-repair-v1.png");
+  background-image: url("/brand/service-hardware-repair-v1.webp");
 }
 .service-card-onsite::before {
-  background-image: url("/brand/service-onsite-support-v1.png");
+  background-image: url("/brand/service-onsite-support-v1.webp");
 }
 .service-card:hover {
   transform: translateY(-6px);
@@ -2033,7 +2033,7 @@ textarea::placeholder {
 .website-loader-video {
   overflow: hidden;
   background: #edf0ef;
-  animation: loader-failsafe 0s 9s forwards;
+  animation: loader-failsafe 0s 4s forwards;
 }
 .website-loader-video::after {
   content: "";

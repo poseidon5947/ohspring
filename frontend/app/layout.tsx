@@ -10,7 +10,7 @@ export const metadata = {
   title: "AB Systems Tech | Software, Hardware & IT Support",
   description:
     "Soluciones tecnológicas desde Colombia. Custom software and remote IT support worldwide. Hardware repairs and on-site support in Colombia.",
-  icons: { icon: "/brand/icon.png" },
+  icons: { icon: "/brand/icon.webp" },
 };
 export default function RootLayout({
   children,

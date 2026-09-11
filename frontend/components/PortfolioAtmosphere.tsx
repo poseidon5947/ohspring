@@ -38,6 +38,10 @@ export default function PortfolioAtmosphere() {
       }));
     };
     const draw = (time: number) => {
+      if (!reduced.matches && !document.hidden && last && time - last < 34) {
+        frame = requestAnimationFrame(draw);
+        return;
+      }
       const delta = last ? Math.min((time - last) / 1000, 0.05) : 0;
       last = time;
       elapsed += delta;

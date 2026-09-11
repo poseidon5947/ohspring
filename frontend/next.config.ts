@@ -2,6 +2,15 @@ import createNextIntlPlugin from "next-intl/plugin";
 import type { NextConfig } from "next";
 const config: NextConfig = {
   output: "standalone",
+  poweredByHeader: false,
+  compress: true,
+  images: {
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 31_536_000,
+  },
+  experimental: {
+    useTypeScriptCli: false,
+  },
   async rewrites() {
     return [
       {
@@ -12,6 +21,24 @@ const config: NextConfig = {
   },
   async headers() {
     return [
+      {
+        source: "/brand/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/effects/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
       {
         source: "/:path*",
         headers: [

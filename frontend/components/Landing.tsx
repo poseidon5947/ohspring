@@ -15,40 +15,40 @@ export default function Landing() {
     {
       key: "requests",
       tag: "01",
-      image: "/brand/emblems/tracked-requests-v1.png",
+      image: "/brand/emblems/tracked-requests-v1.webp",
     },
     {
       key: "remoteFlow",
       tag: "02",
-      image: "/brand/emblems/remote-response-v1.png",
+      image: "/brand/emblems/remote-response-v1.webp",
     },
     {
       key: "fieldService",
       tag: "03",
-      image: "/brand/emblems/field-coordination-v1.png",
+      image: "/brand/emblems/field-coordination-v1.webp",
     },
     {
       key: "visibility",
       tag: "04",
-      image: "/brand/emblems/visible-progress-v1.png",
+      image: "/brand/emblems/visible-progress-v1.webp",
     },
   ];
   const journeyStages = [
     {
       key: "journeyDiscover",
-      image: "/brand/emblems/journey-understand-v1.png",
+      image: "/brand/emblems/journey-understand-v1.webp",
     },
     {
       key: "journeyDesign",
-      image: "/brand/emblems/journey-plan-v1.png",
+      image: "/brand/emblems/journey-plan-v1.webp",
     },
     {
       key: "journeyDeliver",
-      image: "/brand/emblems/journey-resolve-v1.png",
+      image: "/brand/emblems/journey-resolve-v1.webp",
     },
     {
       key: "journeyCare",
-      image: "/brand/emblems/journey-care-v1.png",
+      image: "/brand/emblems/journey-care-v1.webp",
     },
   ];
   async function contact(e: React.FormEvent<HTMLFormElement>) {
@@ -69,7 +69,7 @@ export default function Landing() {
   return (
     <>
       <Header />
-      <main>
+      <main className="landing-page">
         <section className="hero container">
           <div className="hero-copy">
             <p className="eyebrow">
@@ -98,7 +98,7 @@ export default function Landing() {
             <div className="hero-nexus-stage">
               <Image
                 className="hero-nexus"
-                src="/brand/emblems/hero-nexus-v1.png"
+                src="/brand/emblems/hero-nexus-v1.webp"
                 alt={t("heroNexusAlt")}
                 width={620}
                 height={620}
@@ -106,7 +106,7 @@ export default function Landing() {
               />
               <span className="hero-nexus-logo">
                 <Image
-                  src="/brand/logo.png"
+                  src="/brand/logo.webp"
                   alt="AB Systems Tech"
                   width={150}
                   height={150}
@@ -131,9 +131,9 @@ export default function Landing() {
         <div className="trust-strip">
           <div className="container">
             {[
-              ["remote", "/brand/emblems/remote-response-v1.png"],
-              ["local", "/brand/emblems/field-coordination-v1.png"],
-              ["human", "/brand/emblems/tracked-requests-v1.png"],
+              ["remote", "/brand/emblems/remote-response-v1.webp"],
+              ["local", "/brand/emblems/field-coordination-v1.webp"],
+              ["human", "/brand/emblems/tracked-requests-v1.webp"],
             ].map(([label, image]) => (
               <span className="trust-item" key={label}>
                 <Image src={image} alt="" width={42} height={42} />
@@ -151,12 +151,14 @@ export default function Landing() {
             <p>{t("serviceIntro")}</p>
           </div>
           <figure className="service-showcase">
-            <img
-              src="/brand/services-showcase-v1.png"
+            <Image
+              src="/brand/services-showcase-v1.webp"
               alt={t("serviceShowcaseAlt")}
-              width={1672}
-              height={941}
+              width={1600}
+              height={901}
               loading="lazy"
+              sizes="(max-width: 760px) 100vw, 1200px"
+              quality={78}
             />
             <figcaption>
               <span>AB SYSTEMS TECH / 01—04</span>
@@ -220,7 +222,7 @@ export default function Landing() {
                   <span className="orbit-node orbit-node-three" />
                   <span className="systems-orbit-mark">
                     <Image
-                      src="/brand/logo.png"
+                      src="/brand/logo.webp"
                       alt="AB Systems Tech"
                       width={92}
                       height={92}
@@ -383,7 +385,7 @@ export default function Landing() {
               <p>{t("contactText")}</p>
               <div className="location">
                 <Image
-                  src="/brand/emblems/field-coordination-v1.png"
+                  src="/brand/emblems/field-coordination-v1.webp"
                   alt=""
                   width={74}
                   height={74}
